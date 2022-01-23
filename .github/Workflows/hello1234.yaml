@@ -1,0 +1,8 @@
+name: learn-github-actions
+On: [push]
+jobs:
+ Build:
+  runs-on: ubuntu-latest
+  steps:
+   -uses: actions/checkout@v2
+   -run: echo "The job was authomatically triggered by a ${{ github.event_name}} event."
